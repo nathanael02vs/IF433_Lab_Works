@@ -9,6 +9,13 @@ fun main(){
 
     for (payment in daftarPayment) {
         payment.processPayment(75000.0)
+
+        // Smart Casting: Jika EWallet topUp lalu coba bayar lagi
+        if (payment is EWallet) {
+            println("=> Terdeteksi sebagai EWallet, melakukan top-up...")
+            payment.topUp(50000.0)
+            payment.processPayment(75000.0)
+        }
         println("-------------------------")
     }
 }
