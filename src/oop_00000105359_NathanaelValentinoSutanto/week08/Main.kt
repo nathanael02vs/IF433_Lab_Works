@@ -1,5 +1,6 @@
 package oop_00000105359_NathanaelValentinoSutanto.week08
 
+// CP9: test output
 fun main() {
     println("=== TEST SAFE CALLS & ELVIS ===")
     val emptyOrder = Order(null, null)
