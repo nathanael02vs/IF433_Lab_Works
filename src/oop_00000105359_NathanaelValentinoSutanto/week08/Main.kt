@@ -1,6 +1,5 @@
 package oop_00000105359_NathanaelValentinoSutanto.week08
 
-// CP9: test output
 fun main() {
     println("=== TEST SAFE CALLS & ELVIS ===")
     val emptyOrder = Order(null, null)
@@ -41,4 +40,13 @@ fun main() {
     // Coba cast ke String. Jika gagal (null), ganti dengan "Unknown String"
     val safeString = someObject as? String ?: "Unknown String"
     println("Hasil cast + fallback: $safeString")
+
+    println("\n=== TEST THE RED BUTTON (!!) ===")
+    val toxicData: String? = null
+    try {
+        // DANGEROUS: Memaksa compiler percaya data ini tidak null
+        val length = toxicData!!.length
+    } catch (e: NullPointerException) {
+        println("CRASH (NPE)! Jangan gunakan !! secara sembarangan.")
+    }
 }
