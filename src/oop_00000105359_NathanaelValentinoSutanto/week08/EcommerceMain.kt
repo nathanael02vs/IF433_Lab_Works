@@ -1,5 +1,6 @@
 package oop_00000105359_NathanaelValentinoSutanto.week08
 
+// CP 20: Test EcommerceMain
 fun main() {
     val rawApiData: List<Map<String, Any?>> = listOf(
         mapOf("id" to "E01", "name" to "Laptop", "type" to "ELECTRONIC", "warranty" to 24),
