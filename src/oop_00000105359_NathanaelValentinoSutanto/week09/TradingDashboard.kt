@@ -1,5 +1,5 @@
 package oop_00000105359_NathanaelValentinoSutanto.week09
-
+//Checkpoint 20
 fun main() {
     val tradeHistory = listOf(
         TradeLog("BTCUSDT", "LONG",  20,  15.5,  "CLOSED"),
