@@ -1,5 +1,5 @@
 package oop_00000105359_NathanaelValentinoSutanto.week10
-
+//Checkpoint 20 "week10: (task) test full generic crypto architecture"
 fun main() {
     val coinRepo = WalletRepository<Coin>()
 
