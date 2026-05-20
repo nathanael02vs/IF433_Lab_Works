@@ -60,5 +60,10 @@ fun main() {
     println("Malformed data berhasil di-inject.")
 
     val loadedData = loadTrades(path = "crypto_trades.csv")
+
+    println("\n=== VALID TRADE RECORDS ===")
+    loadedData.forEach { println(it) }
+
     val totalPnl = loadedData.sumOf { it.pnl }
+    println("\n==== TOTAL PnL BERSIH: $totalPnl ====")
 }
