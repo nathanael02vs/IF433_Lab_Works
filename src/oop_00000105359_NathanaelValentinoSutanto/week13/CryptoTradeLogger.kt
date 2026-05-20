@@ -55,4 +55,7 @@ fun main() {
 
     saveTrades(trades, path = "crypto_trades.csv")
     println("Trade records berhasil disimpan.")
+
+    File("crypto_trades.csv").appendText("CORRUPT_ID,DOGEUSDT,Hold,XX,YY\n")
+    println("Malformed data berhasil di-inject.")
 }
